@@ -7,7 +7,6 @@ import Data from "./components/Data";
 import Cart from "./common/Cart/Cart";
 import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
-import Account from "./common/Account/Account";
 import Users from "./pages/Users";
 import Page from "./pages/Page";
 import { Map } from "./pages/Map";
@@ -15,9 +14,10 @@ import Contact from "./pages/Contact";
 import FaqPage from "./pages/FaqPage";
 import HelpPage from "./pages/HelpPage";
 import Phone from "./Mini-Pages/Phone/Phone";
+import { LoginPage } from "./common/Auth/LoginPage";
+import RegisterPage from "./common/Auth/RegisterPage";
 
 function App() {
-
   const { productItems } = Data;
   const { shopItems } = Sdata;
 
@@ -54,6 +54,7 @@ function App() {
   };
 
   const [user, setUser] = useState(false);
+  const [registered, setRegistered] = useState(false);
   return (
     <>
       <Router>
@@ -61,6 +62,20 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Page />
+          </Route>
+          <Route
+            path="/login"
+            registered={registered}
+            setRegistered={setRegistered}
+          >
+            <LoginPage />
+          </Route>
+          <Route
+            path="/register"
+            registered={registered}
+            setRegistered={setRegistered}
+          >
+            <RegisterPage />
           </Route>
           <Route path="/pages" exact>
             <Pages
@@ -78,9 +93,6 @@ function App() {
           </Route>
           <Route path="/user" exact>
             <Users />
-          </Route>
-          <Route path="/account" exact>
-            <Account setUser={setUser} user={user} />
           </Route>
           <Route path="/track" exact>
             <Map />
