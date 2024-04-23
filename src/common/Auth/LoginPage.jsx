@@ -23,7 +23,6 @@ export const LoginPage = (setRegistered, registered) => {
           const data = res.data;
           setData(data);
           checkAccount(data);
-          // console.log(data);
         })
         .catch((e) => {
           console.log(e);
@@ -36,14 +35,14 @@ export const LoginPage = (setRegistered, registered) => {
   const checkAccount = (data) => {
     if (!data.length) {
       alert("Аккаунт не найден");
-      return
+      return;
     }
     const found = data.find(
       (user) => user.user.name == name && user.user.password == password
     );
     if (found) {
-      console.log("Successfully found!");
-      console.log(found);
+      alert("Успешно зашли!");
+      history.push('/');
     } else {
       alert("Не правильный логин или пароль");
     }
