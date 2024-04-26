@@ -7,7 +7,6 @@ import Data from "./components/Data";
 import Cart from "./common/Cart/Cart";
 import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
-import Account from "./common/Account/Account";
 import Users from "./pages/Users";
 import Page from "./pages/Page";
 import { Map } from "./pages/Map";
@@ -15,9 +14,11 @@ import Contact from "./pages/Contact";
 import FaqPage from "./pages/FaqPage";
 import HelpPage from "./pages/HelpPage";
 import Phone from "./Mini-Pages/Phone/Phone";
+import { LoginPage } from "./common/Auth/LoginPage";
+import RegisterPage from "./common/Auth/RegisterPage";
+import AdminLogin from "./common/Auth/admin";
 
 function App() {
-
   const { productItems } = Data;
   const { shopItems } = Sdata;
 
@@ -62,6 +63,12 @@ function App() {
           <Route path="/" exact>
             <Page />
           </Route>
+          <Route path="/login">
+            <LoginPage />
+          </Route>
+          <Route path="/register">
+            <RegisterPage />
+          </Route>
           <Route path="/pages" exact>
             <Pages
               productItems={productItems}
@@ -79,9 +86,6 @@ function App() {
           <Route path="/user" exact>
             <Users />
           </Route>
-          <Route path="/account" exact>
-            <Account setUser={setUser} user={user} />
-          </Route>
           <Route path="/track" exact>
             <Map />
           </Route>
@@ -93,6 +97,9 @@ function App() {
           </Route>
           <Route path="/contact" exact>
             <Contact />
+          </Route>
+          <Route path="/admin" exact>
+            <AdminLogin/>
           </Route>
         </Switch>
         <Footer />
