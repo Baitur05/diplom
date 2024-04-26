@@ -16,6 +16,7 @@ import HelpPage from "./pages/HelpPage";
 import Phone from "./Mini-Pages/Phone/Phone";
 import { LoginPage } from "./common/Auth/LoginPage";
 import RegisterPage from "./common/Auth/RegisterPage";
+import AdminLogin from "./common/Auth/admin";
 
 function App() {
   const { productItems } = Data;
@@ -54,7 +55,6 @@ function App() {
   };
 
   const [user, setUser] = useState(false);
-  const [registered, setRegistered] = useState(false);
   return (
     <>
       <Router>
@@ -63,18 +63,10 @@ function App() {
           <Route path="/" exact>
             <Page />
           </Route>
-          <Route
-            path="/login"
-            registered={registered}
-            setRegistered={setRegistered}
-          >
+          <Route path="/login">
             <LoginPage />
           </Route>
-          <Route
-            path="/register"
-            registered={registered}
-            setRegistered={setRegistered}
-          >
+          <Route path="/register">
             <RegisterPage />
           </Route>
           <Route path="/pages" exact>
@@ -105,6 +97,9 @@ function App() {
           </Route>
           <Route path="/contact" exact>
             <Contact />
+          </Route>
+          <Route path="/admin" exact>
+            <AdminLogin/>
           </Route>
         </Switch>
         <Footer />

@@ -8,7 +8,7 @@ const URL =
 
 // const URL = process.env.DATA_API_KEY
 
-export const LoginPage = (setRegistered, registered) => {
+export const LoginPage = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [data, setData] = useState();
@@ -42,7 +42,8 @@ export const LoginPage = (setRegistered, registered) => {
     );
     if (found) {
       alert("Успешно зашли!");
-      history.push('/');
+      history.push("/");
+      localStorage.setItem("logging");
     } else {
       alert("Не правильный логин или пароль");
     }
@@ -106,6 +107,16 @@ export const LoginPage = (setRegistered, registered) => {
               className="decoration-solid decoration-blue-600 decoration-1 text-blue-600 hover:decoration-1 cursor-pointer"
             >
               Создать сейчас
+            </a>
+          </p>
+        </div>
+        <div>
+          <p className="mt-4 text-gray-600 flex gap-2 justify-center">
+            <a
+              onClick={() => history.push("/admin")}
+              className="decoration-solid decoration-blue-600 decoration-1 text-blue-600 hover:decoration-1 cursor-pointer"
+            >
+              Войти как админ
             </a>
           </p>
         </div>
