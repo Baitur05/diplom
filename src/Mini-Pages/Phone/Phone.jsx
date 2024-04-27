@@ -15,7 +15,7 @@ const Phone = ({ shopItems, addToCart }) => {
             <div className="product mtop">
               <div className="img">
                 <span className="discount">
-                  {shopItems.discount}% арзандатуу
+                  {shopItems.discount}% скидка
                 </span>
                 <img src={shopItems.cover} alt="" />
                 <div className="product-like">

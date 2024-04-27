@@ -12,7 +12,7 @@ const Discount = () => {
               <h2>Чоң арзандатуулар</h2>
             </div>
             <div className="heading-right row ">
-              <span>Баарын көрүү</span>
+              <span>Очистить всё</span>
               <i className="fa-solid fa-caret-right"></i>
             </div>
           </div>
