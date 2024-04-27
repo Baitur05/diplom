@@ -24,19 +24,19 @@ const Navbar = () => {
             >
 
               <li>
-                <Link to="/">башкы бет</Link>
+                <Link to="/">Главная страница</Link>
               </li>
               <li>
-                <Link to="/pages">беттер</Link>
+                <Link to="/pages">Страницы</Link>
               </li>
               <li>
-                <Link to="/user">колдонуучу</Link>
+                <Link to="/user">Пользователь</Link>
               </li>
               <li>
-                <Link to="/track">онлайн карта</Link>
+                <Link to="/track">Онлайн карта</Link>
               </li>
               <li>
-                <Link to="/contact">байланышуу</Link>
+                <Link to="/contact">Связаться</Link>
               </li>
             </ul>
 

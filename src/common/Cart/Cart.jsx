@@ -15,7 +15,7 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
           <div className="cart-details">
             {CartItem.length === 0 && (
               <h1 className="no-items product">
-                Эч кандай буюмдар себетке кошулган жок
+              В карзине пусто
               </h1>
             )}
 
@@ -64,9 +64,9 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
           </div>
 
           <div className="cart-total product">
-            <h2>Себет</h2>
+            <h2>Корзина</h2>
             <div className=" d_flex">
-              <h4>Жалпы баасы :</h4>
+              <h4>Общая сумма :</h4>
               <h3>{totalPrice}c</h3>
             </div>
           </div>

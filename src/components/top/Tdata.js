@@ -1,28 +1,28 @@
 const Tdata = [
   {
     cover: "./images/top/category-1.png",
-    para: "кулакчын",
-    desc: "Ушул аптада 3 миң буйрутма",
+    para: "наушники",
+    desc: "В этой неделе 3 тысяч заказов",
   },
   {
     cover: "./images/top/category-2.png",
-    para: "кол саат",
-    desc: "Ушул аптада 4 миң буйрутма",
+    para: "часы",
+    desc: "В этой неделе 5 тысяч заказов",
   },
   {
     cover: "./images/top/category-3.png",
-    para: "көз айнек",
-    desc: "Ушул аптада 6 миң буйрутма",
+    para: "очки",
+    desc: "В этой неделе 4 тысяч заказов",
   },
   {
     cover: "./images/top/category-2.png",
-    para: "кол саат",
-    desc: "Ушул аптада 4 миң буйрутма",
+    para: "часы",
+    desc: "В этой неделе 5 тысяч заказов",
   },
   {
     cover: "./images/top/category-3.png",
-    para: "көз айнек",
-    desc: "Ушул аптада 6 миң буйрутма",
+    para: "очки",
+    desc: "В этой неделе 4 тысяч заказов",
   },
 ];
 

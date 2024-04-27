@@ -31,7 +31,7 @@ const SlideCard = () => {
                     onClick={() => history.push("/pages")}
                     className="btn-primary"
                   >
-                    Коллекцияларга өтүңүз
+                   Пройдите к коллекциям
                   </button>
                 </div>
                 <div className="right">
