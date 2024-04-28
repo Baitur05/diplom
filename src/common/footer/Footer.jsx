@@ -4,13 +4,12 @@ import "./style.css";
 const Footer = () => {
   return (
     <>
-      <footer>
-        <div className="container grid2">
+      <footer >
+        <div className="container grid2" >
           <div className="box">
-            <h1>Онлайн дүкөн</h1>
+            <h1>Онлайн магазин</h1>
             <p>
-              Биз 100 миллиондон ашык баардык ассортименттерди конкренттүү түрдө
-              сунуштайбыз..
+            Мы расширили наш ассортимент до ста миллионов товаров и предлагаем конкурентные цены.
             </p>
             <div className="icon d_flex">
               <div className="img d_flex">
@@ -25,31 +24,31 @@ const Footer = () => {
           </div>
 
           <div className="box">
-            <h2>Биз жөнүндө</h2>
+            <h2>Про нас</h2>
             <ul>
-              <li>Карьерабыз</li>
-              <li>Биздин дукон</li>
+              <li>Карьера</li>
+              <li>Наш магазин</li>
+              <li>Условия</li>
               <li>Our Cares</li>
-              <li>Шарттар жана жоболор</li>
               <li>Купуялуулук</li>
             </ul>
           </div>
           <div className="box">
-            <h2>Customer Care</h2>
+            <h2>Обслуживание клиентов</h2>
             <ul>
-              <li>Жардам борбору</li>
-              <li>Кантип сатып алса болот </li>
-              <li>Заказыңызды көзөмөлдөңүз </li>
-              <li>Corporate & Bulk Purchasing </li>
-              <li>Корпоративдик жана жапырт сатып алуу </li>
+              <li>Помощь</li>
+              <li>Как можно купить</li>
+              <li>Следите за заказом</li>
+              <li>Корпоративные и оптовые закупки</li>
+              <li>Возвраты и возврат денег</li>
             </ul>
           </div>
           <div className="box">
-            <h2>Биз менен байланыш</h2>
+            <h2>Наши контакты</h2>
             <ul>
-              <li>Ахунбаева 14, Бишкек, Кыргызстан </li>
-              <li>Email: daniel.karimov@gmail.com</li>
-              <li>Phone: +996 553 788 791</li>
+              <li>г Бишкек</li>
+              <li>Email: online.market@gmail.com</li>
+              <li>Phone: +996 777 777 777</li>
             </ul>
           </div>
         </div>

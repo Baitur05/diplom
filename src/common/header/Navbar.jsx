@@ -6,13 +6,19 @@ const Navbar = () => {
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
     <>
-      <header className="header">
+      <header className="header" style={{marginTop:'15px' }}>
         <div className="container d_flex">
-          <div className="catgrories d_flex">
-            {/* <span class="fa-solid fa-border-all"></span>
-            <h4>
-              Категория <i className="fa fa-chevron-down"></i>
-            </h4> */}
+          <div className=" bottom-0 d_flex">
+            <h4
+              style={{
+                color: "#FF0000 ",
+                fontSize: "180%",
+                margin: "10px ",
+                fontWeight: "bold",
+              }}
+            >
+              ONLINE STORE
+            </h4>
           </div>
 
           <div className="navlink">
@@ -22,21 +28,20 @@ const Navbar = () => {
               }
               onClick={() => setMobileMenu(false)}
             >
-
               <li>
-                <Link to="/">башкы бет</Link>
+                <Link to="/">Главная страница</Link>
               </li>
               <li>
-                <Link to="/pages">беттер</Link>
+                <Link to="/pages">Страницы</Link>
               </li>
               <li>
-                <Link to="/user">колдонуучу</Link>
+                <Link to="/user">Пользователь</Link>
               </li>
               <li>
-                <Link to="/track">онлайн карта</Link>
+                <Link to="/track">Онлайн карта</Link>
               </li>
               <li>
-                <Link to="/contact">байланышуу</Link>
+                <Link to="/contact">Связаться</Link>
               </li>
             </ul>
 

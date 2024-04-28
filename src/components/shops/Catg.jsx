@@ -31,7 +31,7 @@ const Catg = () => {
     <>
       <div className="category">
         <div className="chead d_flex">
-          <h1>Бренддер</h1>
+          <h1>Бренды</h1>
         </div>
         {data.map((value, index) => {
           return (
@@ -42,7 +42,7 @@ const Catg = () => {
           );
         })}
         <div className="box box2">
-          <button>Бардык бренддерди көрүү</button>
+          <button>Посмотреть все бренды</button>
         </div>
       </div>
     </>

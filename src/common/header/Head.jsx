@@ -21,13 +21,7 @@ const Head = ({ user }) => {
                 <Link to="/faq">Theme FAQ"</Link>
               </li>
               <li>
-                <Link to="/help">Жардам?</Link>
-              </li>
-              <li>
-                <Link to="/kgz">🏳️ Кыргызча</Link>
-              </li>
-              <li>
-                <Link to="/rus">🏳️ Орусча</Link>
+                <Link to="/help">Помошь?</Link>
               </li>
             </ul>
           </div>

@@ -10,7 +10,7 @@ const NewArrivals = ({ isAllShow, setAllShow }) => {
           <div className="heading d_flex">
             <div className="heading-left row  f_flex">
               <img src="https://img.icons8.com/glyph-neue/64/26e07f/new.png" />
-              <h2>Жаңы келгендер</h2>
+              <h2>Новое поступление</h2>
             </div>
             <div className="heading-right row ">
               <span
@@ -18,7 +18,7 @@ const NewArrivals = ({ isAllShow, setAllShow }) => {
                   isAllShow ? setAllShow(false) : setAllShow(true)
                 }
               >
-                {isAllShow ? "Азыраак көрүү" : "Баарын көрүү"}
+                {isAllShow ? "Свернуть" : "Свернуть всё"}
               </span>
               <i className="fa-solid fa-caret-right"></i>
             </div>

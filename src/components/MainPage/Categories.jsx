@@ -1,21 +1,23 @@
 import React from "react";
+import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import { Link } from "react-router-dom/cjs/react-router-dom";
+
 
 const Categories = () => {
   const data = [
     {
       cateImg: "./images/category/cat1.png",
-      cateName: "Iphone",
+      cateName: "Телефоны",
       link: "/phone",
     },
     {
       cateImg: "./images/category/cat2.png",
-      cateName: "Electronic",
+      cateName: "Электроника",
       link: "/phone",
     },
     {
       cateImg: "./images/category/cat3.png",
-      cateName: "Mac",
+      cateName: "Макбуки",
       link: "/phone",
     },
     {
@@ -60,7 +62,7 @@ const Categories = () => {
       <div className="category w-44">
         {data.map((value, index) => {
           return (
-            <div className="box f_flex" key={index}>
+            <div className="box flex items-center" key={index}>
               <img src={value.cateImg} alt="" />
               <Link to={value.link}>
                 <span>{value.cateName}</span>
