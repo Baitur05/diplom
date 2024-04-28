@@ -24,7 +24,7 @@ const NewArrivals = ({ isAllShow, setAllShow }) => {
             </div>
           </div>
           <Cart isAllShow={isAllShow} setAllShow={setAllShow} />
-        </div>
+        </div> 
       </section>
     </>
   );

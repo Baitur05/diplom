@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Categories from "../components/MainPage/Categories";
+import ContactObl from "./ContactObl";
+import { Collapse, List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
 
 const Contact = () => {
+  const [open, setOpen] = React.useState(true);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className="mb-96 pb-96">
       <div className="absolute ml-20 w-[80%] text-xl">
@@ -41,9 +50,19 @@ const Contact = () => {
         </div>
         <div className="cursor-pointer mt-6">
           <h3 className="text-sm  mt-4 mb-2">город Бишкек</h3>
-          <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
+          <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2 flex justify-between" onClick={handleClick}>
             Чүйская область
+            {open ? <ExpandLess /> : <ExpandMore />}
           </h2>
+          <Collapse in={open} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton sx={{ pl: 4 }}>
+                <ListItemIcon>
+                </ListItemIcon>
+                <ListItemText primary="Starred" />
+              </ListItemButton>
+            </List>
+          </Collapse>
           <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
             Ошская область
           </h2>
@@ -64,6 +83,9 @@ const Contact = () => {
           </h2>
         </div>
       </div>
+      {/* {isAllShow && (
+        <ContactObl isAllShow={isAllShow} setAllShow={setAllShow} />
+      )} */}
     </div>
   );
 };
