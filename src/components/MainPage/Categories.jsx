@@ -1,58 +1,58 @@
 import React from "react";
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import HeadphonesIcon from '@mui/icons-material/Headphones';
+import CableIcon from '@mui/icons-material/Cable';
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import WatchIcon from '@mui/icons-material/Watch';
+import TabletAndroidIcon from '@mui/icons-material/TabletAndroid';
+import VoicemailIcon from '@mui/icons-material/Voicemail';
+
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 
 const Categories = () => {
   const data = [
     {
-      cateImg: "./images/category/cat1.png",
+      cateImg: <PhoneAndroidIcon style={{color:'#0f3460'}}/>,
       cateName: "Телефоны",
       link: "/phone",
     },
     {
-      cateImg: "./images/category/cat2.png",
+      cateImg:  <CableIcon style={{color:'#0f3460'}}/>,
       cateName: "Электроника",
       link: "/phone",
     },
     {
-      cateImg: "./images/category/cat3.png",
-      cateName: "Макбуки",
+      cateImg: <LaptopMacIcon style={{color:'#0f3460'}}/>,
+      cateName: "Ноутбуки",
       link: "/phone",
     },
     {
-      cateImg: "./images/category/cat4.png",
-      cateName: "AirPods",
+      cateImg: <TabletAndroidIcon style={{color:'#0f3460'}}/>,
+      cateName: "Планшеты",
       link: "/phone",
     },
     {
-      cateImg: "./images/category/cat5.png",
-      cateName: "Чехол",
+      cateImg: <HeadphonesIcon style={{color:'#0f3460'}}/>,
+      cateName: "Наушники",
+      link: "/phone",
+    },
+  
+    {
+      cateImg: <WatchIcon style={{color:'#0f3460'}}/>,
+      cateName: "часы",
       link: "/phone",
     },
     {
-      cateImg: "./images/category/cat6.png",
-      cateName: "AirPods",
+      cateImg: <VoicemailIcon style={{color:'#0f3460'}}/>,
+      cateName: "Очки",
       link: "/phone",
     },
-    {
-      cateImg: "./images/category/cat4.png",
-      cateName: "AirPods",
-      link: "/phone",
-    },
-    {
-      cateImg: "./images/category/cat5.png",
-      cateName: "Чехол",
-      link: "/phone",
-    },
-    {
-      cateImg: "./images/category/cat6.png",
-      cateName: "AirPods",
-      link: "/phone",
-    },
-    {
-      cateImg: "./images/category/cat5.png",
-      cateName: "Чехол",
+ 
+     {
+      cateImg: <SmartphoneIcon style={{color:'#0f3460'}}/>,
+      cateName: "Чехлы",
       link: "/phone",
     },
   ];
@@ -62,10 +62,12 @@ const Categories = () => {
       <div className="category w-44">
         {data.map((value, index) => {
           return (
-            <div className="box flex items-center" key={index}>
-              <img src={value.cateImg} alt="" />
-              <Link to={value.link}>
-                <span>{value.cateName}</span>
+            <div className="box flex items-center " key={index}  style={{height:'60px', textAlign:'center'}}>
+              {value.cateImg}
+              <Link  to={value.link }>
+                <div>
+                <span style={{fontSize:'22px' }}>{value.cateName}</span>
+                </div>
               </Link>
             </div>
           );

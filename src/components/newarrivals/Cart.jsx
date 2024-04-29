@@ -6,14 +6,14 @@ const Cart = ({ isAllShow, setAllShow }) => {
     <>
       <div
         className={`${
-          !isAllShow ? "h-[200px]" : "h-[600px]"
+          !isAllShow ? "h-[230px]" : "h-[650px]"
         } content grid product transition-[3s] overflow-hidden`}
       >
         {Ndata.map((val, index) => {
           return (
             <>
-              <div className="box" key={index}>
-                <div className="img">
+              <div className="box"  key={index}>
+                <div className="img" style={{marginBottom:'10px'}}>
                   <img src={val.cover} alt="" />
                 </div>
                 <h4>{val.name}</h4>
