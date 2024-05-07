@@ -19,6 +19,7 @@ const Cart = ({ isAllShow, setAllShow }) => {
                 <h4>{val.name}</h4>
                 <span>{val.price}с</span>
               </div>
+              
               <div className="box" key={index}>
                 <div className="img">
                   <img src={val.cover} alt="" />
