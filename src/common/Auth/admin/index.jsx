@@ -3,7 +3,7 @@ import admin from "../../../admin.jpg";
 import axios from "axios";
 
 const URL =
-  "https://api.elchocrud.pro/api/v1/f859611b030feca677afa1be331a1a5a/admin";
+  "https://api-v2.elchocrud.pro/api/v1/f106912e7d27ee22a0512d9d9039deb8/addmin";
 
 export default function AdminLogin() {
   const [login, setLogin] = useState("");
@@ -35,7 +35,7 @@ export default function AdminLogin() {
       return;
     }
     const found = data.find(
-      (admin) => login == admin.user.login && password == admin.user.password
+      (admin) => login == admin.user.name && password == admin.user.password
     );
     if (found) {
       window.location.href = "http://localhost:5173";
