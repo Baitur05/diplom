@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Categories from "../components/MainPage/Categories";
+import ContactObl from "./ContactObl";
+import { Collapse, List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
 
 const Contact = () => {
+  const [open, setOpen] = React.useState(true);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
   return (
     <div className="mb-96 pb-96">
       <div className="absolute ml-20 w-[80%] text-xl">
@@ -17,17 +26,17 @@ const Contact = () => {
           <div className="">
             <div>
               <h3 className="text-lg font-bold ">Телефон:</h3>
-              <p className="text-gray-700">0 553 788 791</p>
+              <p className="text-gray-700">0 777 777 777</p>
             </div>
             <div>
               <h3 className="text-lg font-bold">г. Бишкек</h3>
-              <p className="text-gray-700">Ахунбаева көчөсү, 58/4</p>
+              <p className="text-gray-700">ул. Ахунбаева, 55/5</p>
             </div>
           </div>
           <div className="">
             <div className="">
               <h3 className="text-lg font-bold">E-mail:</h3>
-              <p className="text-gray-700">donchakarimov@gmail.com</p>
+              <p className="text-gray-700">online_market@gmail.com</p>
             </div>
             <div>
               <h3 className="text-lg font-bold">Пн-Вс: 24/7</h3>
@@ -40,30 +49,43 @@ const Contact = () => {
           <hr className="border-[1px] border-gray-500 my-4 w-96" />
         </div>
         <div className="cursor-pointer mt-6">
-          <h3 className="text-sm  mt-4 mb-2">Бишкек шаары</h3>
+          <h3 className="text-sm  mt-4 mb-2">город Бишкек</h3>
+          <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2 flex justify-between" onClick={handleClick}>
+            Чүйская область
+            {open ? <ExpandLess /> : <ExpandMore />}
+          </h2>
+          <Collapse in={open} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListItemButton sx={{ pl: 4 }}>
+                <ListItemIcon>
+                </ListItemIcon>
+                <ListItemText primary="Starred" />
+              </ListItemButton>
+            </List>
+          </Collapse>
           <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
-            Чүй облусу
+            Ошская область
           </h2>
           <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
-            Ош облусу
+            Ыссык-Кульская область
           </h2>
           <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
-            Ыссык-Көл облусу
+            Жалал-Абадская область
           </h2>
           <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
-            Жалал-Абад облусу
+            Нарынская область
           </h2>
           <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
-            Нарын облусу
+            Таласская область
           </h2>
           <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
-            Талас облусу
-          </h2>
-          <h2 className="text-2xl py-3 px-3 font-bold text-black bg-slate-100 mb-2">
-            Баткен облусу
+            Баткенская область
           </h2>
         </div>
       </div>
+      {/* {isAllShow && (
+        <ContactObl isAllShow={isAllShow} setAllShow={setAllShow} />
+      )} */}
     </div>
   );
 };

@@ -60,7 +60,7 @@ export default function AdminLogin() {
           >
             Логин
           </label>
-          <div className="relative mt-2 rounded-md shadow-sm">
+          <div className="relative mt-2 rounded-md shadow-sm  ">
             <input
               onChange={(e) => setLogin(e.target.value)}
               type="text"
