@@ -8,7 +8,6 @@ import Cart from "./common/Cart/Cart";
 import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
 import Users from "./pages/Users";
-import Page from "./pages/Page";
 import { Map } from "./pages/Map";
 import Contact from "./pages/Contact";
 import FaqPage from "./pages/FaqPage";
@@ -17,6 +16,7 @@ import Phone from "./Mini-Pages/Phone/Phone";
 import { LoginPage } from "./common/Auth/LoginPage";
 import RegisterPage from "./common/Auth/RegisterPage";
 import AdminLogin from "./common/Auth/admin";
+import Page from "./pages/Page";
 
 function App() {
   const { productItems } = Data;
@@ -61,6 +61,13 @@ function App() {
         <Header user={user} CartItem={CartItem} />
         <Switch>
           <Route path="/" exact>
+            <Pages
+              productItems={productItems}
+              addToCart={addToCart}
+              shopItems={shopItems}
+            />
+          </Route>
+          <Route path="/pages" exact>
             <Page />
           </Route>
           <Route path="/login">
@@ -68,13 +75,6 @@ function App() {
           </Route>
           <Route path="/register">
             <RegisterPage />
-          </Route>
-          <Route path="/pages" exact>
-            <Pages
-              productItems={productItems}
-              addToCart={addToCart}
-              shopItems={shopItems}
-            />
           </Route>
           <Route path="/cart" exact>
             <Cart
@@ -99,7 +99,7 @@ function App() {
             <Contact />
           </Route>
           <Route path="/admin" exact>
-            <AdminLogin/>
+            <AdminLogin />
           </Route>
         </Switch>
         <Footer />
