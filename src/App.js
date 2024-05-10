@@ -17,6 +17,7 @@ import Phone from "./Mini-Pages/Phone/Phone";
 import { LoginPage } from "./common/Auth/LoginPage";
 import RegisterPage from "./common/Auth/RegisterPage";
 import AdminLogin from "./common/Auth/admin";
+import Payment from "./common/Payment/Payment"
 
 function App() {
   const { productItems } = Data;
@@ -61,6 +62,13 @@ function App() {
         <Header user={user} CartItem={CartItem} />
         <Switch>
           <Route path="/" exact>
+            <Pages
+              productItems={productItems}
+              addToCart={addToCart}
+              shopItems={shopItems}
+            />
+          </Route>
+          <Route path="/pages" exact>
             <Page />
           </Route>
           <Route path="/login">
@@ -68,13 +76,6 @@ function App() {
           </Route>
           <Route path="/register">
             <RegisterPage />
-          </Route>
-          <Route path="/pages" exact>
-            <Pages
-              productItems={productItems}
-              addToCart={addToCart}
-              shopItems={shopItems}
-            />
           </Route>
           <Route path="/cart" exact>
             <Cart
@@ -99,7 +100,10 @@ function App() {
             <Contact />
           </Route>
           <Route path="/admin" exact>
-            <AdminLogin/>
+            <AdminLogin />
+          </Route>
+          <Route path="/payment" exact>
+            <Payment/>
           </Route>
         </Switch>
         <Footer />

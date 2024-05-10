@@ -32,9 +32,6 @@ const Navbar = () => {
                 <Link to="/">Главная страница</Link>
               </li>
               <li>
-                <Link to="/pages">Страницы</Link>
-              </li>
-              <li>
                 <Link to="/user">Пользователь</Link>
               </li>
               <li>
