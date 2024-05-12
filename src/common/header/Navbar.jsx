@@ -6,12 +6,18 @@ const Navbar = () => {
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
     <>
-      <header className="header">
+      <header className="header" style={{marginTop:'15px' }}>
         <div className="container d_flex">
-          <div className="catgrories d_flex">
-            <span class="fa-solid fa-border-all"></span>
-            <h4>
-              Категория <i className="fa fa-chevron-down"></i>
+          <div className=" bottom-0 d_flex">
+            <h4
+              style={{
+                color: "#FF0000 ",
+                fontSize: "180%",
+                margin: "10px ",
+                fontWeight: "bold",
+              }}
+            >
+              ONLINE STORE
             </h4>
           </div>
 
@@ -22,7 +28,6 @@ const Navbar = () => {
               }
               onClick={() => setMobileMenu(false)}
             >
-
               <li>
                 <Link to="/">Главная страница</Link>
               </li>

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 
-const URL =
-  "https://api.elchocrud.pro/api/v1/f81b4f2ea246be98b7d7461d53481024/users";
+const URL = "https://api-v2.elchocrud.pro/api/v1/de49b8d99ea7b671e17db89f567f5459/userss"
 
 const RegisterPage = () => {
   const [name, setName] = useState("");

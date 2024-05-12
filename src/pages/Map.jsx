@@ -25,7 +25,7 @@ export const Map = () => {
       </div>
       <div
         ref={mapContainerRef}
-        className="absolute ml-96 mt-2 w-[68%] h-[75vh]"
+        className="absolute ml-96 mt-2 w-[68%] h-[66vh]"
       ></div>
     </div>
   );

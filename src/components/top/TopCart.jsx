@@ -19,7 +19,7 @@ const TopCart = () => {
           return (
             <>
               <div className='box product' key={index}>
-                <div className='nametop d_flex'>
+                <div className='nametop d_flex' style={{height:'60px'}}>
                   <span className='tleft'>{value.para}</span>
                   <span className='tright'>{value.desc}</span>
                 </div>

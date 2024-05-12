@@ -20,13 +20,13 @@ const Search = ({ CartItem }) => {
                 width: "50%",
               }}
             />
-            {/* Online Store */}
+            {/* Online Store */}  
           </div>
 
           <div className="search-box f_flex">
             <i className="fa fa-search"></i>
             <input type="text" placeholder="Поиск..." />
-            <span>Все</span>
+            <span style={{margin:'auto'}}>Все</span>
           </div>
 
           <div className="icon f_flex width">

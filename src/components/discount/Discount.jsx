@@ -9,7 +9,7 @@ const Discount = () => {
           <div className="heading d_flex">
             <div className="heading-left row  f_flex">
               <img src="https://img.icons8.com/windows/32/fa314a/gift.png" />
-              <h2>Чоң арзандатуулар</h2>
+              <h2>Большие скидки </h2>
             </div>
             <div className="heading-right row ">
               <span>Очистить всё</span>
