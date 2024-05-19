@@ -70,9 +70,7 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
               </div>
             </div>
             {CartItem.length >= 1 && (
-              <Link to="/payment">
-                <button className="offer">Оформить заказ</button>
-              </Link>
+              <button className="offer">Оформить заказ</button>
             )}
           </div>
         </div>
