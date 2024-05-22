@@ -32,11 +32,10 @@ const Navbar = () => {
                 <Link to="/">Главная страница</Link>
               </li>
               <li>
-                <Link to="/pages">О магазине</Link>
-              </li>
+                <Link to="/user">Пользователь</Link>
               <li>
-                <Link to="/user">Доставка</Link>
-              </li>
+                <Link to="/pages">О магазине</Link>
+              </li>  
               <li>
                 <Link to="/track">Онлайн карта</Link>
               </li>

@@ -10,9 +10,32 @@
 
 .cart-items .cart-total {
   width: 30%;
-  margin-top: 30px;
   margin-left: 30px;
-  height: 130px;
+  height: max-content;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.cart-total .product__row{
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 0 4px rgb(227, 227, 227);
+  border-radius: 7px;
+}
+
+.cart-total .offer{
+  background-color: rgb(58, 58, 255);
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 7px;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  transition: .2s;
+}
+
+.offer:hover{
+  background-color: rgb(89, 89, 255);
 }
 .cart-list {
   background: white;
@@ -67,6 +90,7 @@
 .desCart {
   background: #f6f9fc;
 }
+
 .cart-total h4 {
   font-size: 15px;
   font-weight: 400;
@@ -88,4 +112,11 @@
   font-size: 18px;
   margin-top: 30px;
   height: 130px;
+}
+
+.right-cart{
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
