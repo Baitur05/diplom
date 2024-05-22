@@ -33,7 +33,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/user">Пользователь</Link>
-              </li>
+              <li>
+                <Link to="/pages">О магазине</Link>
+              </li>  
               <li>
                 <Link to="/track">Онлайн карта</Link>
               </li>

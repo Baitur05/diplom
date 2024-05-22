@@ -8,7 +8,6 @@ import Cart from "./common/Cart/Cart";
 import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
 import Users from "./pages/Users";
-import Page from "./pages/Page";
 import { Map } from "./pages/Map";
 import Contact from "./pages/Contact";
 import FaqPage from "./pages/FaqPage";

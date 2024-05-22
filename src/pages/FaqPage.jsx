@@ -8,7 +8,7 @@ const FaqPage = () => {
       <div className="px-16">
         {/* <p className="text-xs text-current">online store-theme FAQ's</p> */}
         <h2 className="text-3xl font-bold text-[#0c2a4d] pt-5 ">
-          Көп берилүүчү суроолор
+        Часто задаваемые вопросы
         </h2>
         <div className="flex mb-4 pb-7">
           <hr className="border-[1px] border-gray-500 my-4 w-96" />
@@ -76,7 +76,7 @@ const FaqPage = () => {
           <p className=" mb-4">
           Да, Вы можете приобрести несколько смартфонов в кредит, если банк посчитает, что Ваших доходов достаточно для покупки.
           </p>
-          <h2 className="text-2xl font-bold mb-2">Менде дагы суроолор бар.</h2>
+          <h2 className="text-2xl font-bold mb-2">У меня еще остались вопросы.</h2>
           <p className=" mb-4">
             Позвоните нам по телефону +996 77 777 777. Будем рады ответить на Ваши вопросы! Также Вы можете заказать звонок – для этого на сайте ostore.kg выберите понравившийся Вам смартфон, нажмите кнопку «заказать», введите свой номер телефона и в скором времени наш менеджер Вам перезвонит.
           </p>
