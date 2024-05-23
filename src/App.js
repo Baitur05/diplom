@@ -16,7 +16,7 @@ import Phone from "./Mini-Pages/Phone/Phone";
 import { LoginPage } from "./common/Auth/LoginPage";
 import RegisterPage from "./common/Auth/RegisterPage";
 import AdminLogin from "./common/Auth/admin";
-import Page from "./pages/Page";
+import Payment from "./common/Payment/Payment"
 
 function App() {
   const { productItems } = Data;
@@ -100,6 +100,9 @@ function App() {
           </Route>
           <Route path="/admin" exact>
             <AdminLogin />
+          </Route>
+          <Route path="/payment" exact>
+            <Payment/>
           </Route>
         </Switch>
         <Footer />
