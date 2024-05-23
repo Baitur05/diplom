@@ -8,7 +8,7 @@ const Head = ({ user }) => {
         <div className="container d_flex">
           <div className="left row">
             <i className="fa fa-phone"></i>
-            <label> +996 706 08 00 79</label>
+            <label> +996 551 57 05 71</label>
             {user && (
               <>
                 <i className="fa fa-envelope"></i> <label>{user.email}</label>

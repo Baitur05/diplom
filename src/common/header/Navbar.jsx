@@ -17,11 +17,11 @@ const Navbar = () => {
                 fontWeight: "bold",
               }}
             >
-              ONLINE STORE
+              
             </h4>
           </div>
 
-          <div className="navlink">
+          <div className="navlink" >
             <ul
               className={
                 MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize"
@@ -32,10 +32,10 @@ const Navbar = () => {
                 <Link to="/">Главная страница</Link>
               </li>
               <li>
-                <Link to="/pages">Страницы</Link>
+                <Link to="/pages">О магазине</Link>
               </li>
               <li>
-                <Link to="/user">Пользователь</Link>
+                <Link to="/user">Доставка</Link>
               </li>
               <li>
                 <Link to="/track">Онлайн карта</Link>
