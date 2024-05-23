@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../components/assets/images/63ef8c24f4d39da7df4eafea_Screenshot 2023-02-17 at 8.28.17 PM.png";
+import logo from ".././header/logostore.png";
 import { Link } from "react-router-dom";
 
 const Search = ({ CartItem }) => {
@@ -17,7 +17,7 @@ const Search = ({ CartItem }) => {
               src={logo}
               alts=""
               style={{
-                width: "50%",
+                width: "80%",
               }}
             />
             {/* Online Store */}  

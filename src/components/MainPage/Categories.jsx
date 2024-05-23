@@ -62,7 +62,7 @@ const Categories = () => {
       <div className="category w-44">
         {data.map((value, index) => {
           return (
-            <div className="box flex items-center " key={index}  style={{height:'60px', textAlign:'center'}}>
+            <div className="box flex items-center " key={index}  style={{height:'50px', textAlign:'center'}}>
               {value.cateImg}
               <Link  to={value.link }>
                 <div>

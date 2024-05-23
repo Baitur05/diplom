@@ -1,14 +1,16 @@
+
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
-  // Toogle Menu
+const Navbar = () =>{ 
+
   const [MobileMenu, setMobileMenu] = useState(false);
   return (
     <>
       <header className="header" style={{marginTop:'15px' }}>
         <div className="container d_flex">
-          <div className=" bottom-0 d_flex">
+          <div className="bottom-0 d_flex">
             <h4
               style={{
                 color: "#FF0000 ",
@@ -17,7 +19,7 @@ const Navbar = () => {
                 fontWeight: "bold",
               }}
             >
-              ONLINE STORE
+              {/* Контент для h4, если необходим */}
             </h4>
           </div>
 
@@ -33,9 +35,10 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/user">Пользователь</Link>
+              </li> {/* Закрывающий тег li добавлен здесь */}
               <li>
                 <Link to="/pages">О магазине</Link>
-              </li>  
+              </li>
               <li>
                 <Link to="/track">Онлайн карта</Link>
               </li>
@@ -57,6 +60,7 @@ const Navbar = () => {
           </div>
         </div>
       </header>
+      <div /> {/* Закрывающий тег div исправлен */}
     </>
   );
 };
