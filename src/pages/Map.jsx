@@ -9,11 +9,10 @@ export const Map = () => {
   useEffect(() => {
     const map = DG.map(mapContainerRef.current, {
       center: [42.844605, 74.603279],
-      zoom: 13,
+      zoom: 13  
     });
 
     return () => {
-      // Очистка карты при размонтировании компонента
       map.remove();
     };
   }, []);

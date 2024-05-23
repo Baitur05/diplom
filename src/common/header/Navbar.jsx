@@ -12,12 +12,12 @@ const Navbar = () => {
             <h4
               style={{
                 color: "#FF0000 ",
-                fontSize: "180%",
+                fontSize: "150%",
                 margin: "10px ",
                 fontWeight: "bold",
               }}
             >
-              ONLINE STORE
+              ALYM STORE
             </h4>
           </div>
 
@@ -31,8 +31,6 @@ const Navbar = () => {
               <li>
                 <Link to="/">Главная страница</Link>
               </li>
-              <li>
-                <Link to="/user">Пользователь</Link>
               <li>
                 <Link to="/pages">О магазине</Link>
               </li>  

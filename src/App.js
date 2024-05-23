@@ -67,9 +67,6 @@ function App() {
               shopItems={shopItems}
             />
           </Route>
-          <Route path="/pages" exact>
-            <Page />
-          </Route>
           <Route path="/login">
             <LoginPage />
           </Route>
@@ -83,9 +80,9 @@ function App() {
               decreaseQty={decreaseQty}
             />
           </Route>
-          <Route path="/user" exact>
+          {/* <Route path="/user" exact>
             <Users />
-          </Route>
+          </Route> */}
           <Route path="/track" exact>
             <Map />
           </Route>

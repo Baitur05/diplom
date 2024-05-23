@@ -16,7 +16,9 @@ const Footer = () => {
                 <i class="fa-brands fa-google-play"></i>
                 <span>Google Play</span>
               </div>
-              <div className="img d_flex">
+              <div style={{
+                translate: -30
+              }} className="img d_flex">
                 <i class="fa-brands fa-app-store-ios"></i>
                 <span>App Store</span>
               </div>
@@ -29,8 +31,8 @@ const Footer = () => {
               <li>Карьера</li>
               <li>Наш магазин</li>
               <li>Условия</li>
-              <li>Our Cares</li>
-              <li>Купуялуулук</li>
+              <li>Наши заботы</li>
+              <li>Конфиденциальность</li>
             </ul>
           </div>
           <div className="box">
@@ -47,8 +49,8 @@ const Footer = () => {
             <h2>Наши контакты</h2>
             <ul>
               <li>г Бишкек</li>
-              <li>Email: online.market@gmail.com</li>
-              <li>Phone: +996 777 777 777</li>
+              <li>Email: alym01001@gmail.com</li>
+              <li>Phone: +996 551 570 570</li>
             </ul>
           </div>
         </div>

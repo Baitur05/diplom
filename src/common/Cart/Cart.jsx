@@ -70,7 +70,7 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
               </div>
             </div>
             {CartItem.length >= 1 && (
-              <button className="offer">Оформить заказ</button>
+              <button onClick={() => window.location.href="https://alympayment.netlify.app/"} className="offer">Оформить заказ</button>
             )}
           </div>
         </div>

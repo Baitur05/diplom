@@ -38,7 +38,7 @@ export default function AdminLogin() {
       (admin) => login == admin.user.name && password == admin.user.password
     );
     if (found) {
-      window.location.href = "http://localhost:5173";
+      window.location.href = "https://alymjan-panel.netlify.app/";
     } else {
       alert("Неправильный логин или пароль");
     }
