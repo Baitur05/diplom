@@ -9,11 +9,6 @@ const Head = ({ user }) => {
           <div className="left row">
             <i className="fa fa-phone"></i>
             <label> +996 551 57 05 71</label>
-            {user && (
-              <>
-                <i className="fa fa-envelope"></i> <label>{user.email}</label>
-              </>
-            )}
           </div>
           <div>
             <ul className="flex justify-end">

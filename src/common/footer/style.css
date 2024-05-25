@@ -1,15 +1,9 @@
 footer {
-  margin-top: 40px;
   background-color: #0f3460;
   padding: 50px 0;
   color: #fff;
 }
-footer h1 {
-  margin-bottom: 30px;
-  color: #e94560;
-  font-weight: 800;
-  font-style: italic;
-}
+
 footer .img { 
   background-color: #0c2a4d;
   padding: 15px 15px;
@@ -37,4 +31,28 @@ footer li {
 }
 span {
   font-size: 13px;
+}
+
+.box h2{
+  color: lightgray;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+
+.copyright{
+  transform: translateY(60px);
+  padding: 0 70px;
+}
+
+.copyright span{
+  color: white;
+}
+
+ul li {
+  transition: .3s;
+  cursor: pointer;
+}
+
+ul li:hover{
+  color: #ff4c6a;
 }

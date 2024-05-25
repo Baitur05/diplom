@@ -20,7 +20,6 @@ const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
       <NewArrivals isAllShow={isAllShow} setAllShow={setAllShow} />
       <Discount />
       <Shop shopItems={shopItems} addToCart={addToCart} />
-      <Annocument />
       <Wrapper />
     </>
   );

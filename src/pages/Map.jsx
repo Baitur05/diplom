@@ -9,18 +9,17 @@ export const Map = () => {
   useEffect(() => {
     const map = DG.map(mapContainerRef.current, {
       center: [42.844605, 74.603279],
-      zoom: 13,
+      zoom: 13  
     });
 
     return () => {
-      // Очистка карты при размонтировании компонента
       map.remove();
     };
   }, []);
 
   return (
     <div className="mb-96 pb-40">
-      <div className="absolute ml-20 w-[80%] text-xl">
+      <div className="absolute text-xl">
         <Categories />
       </div>
       <div

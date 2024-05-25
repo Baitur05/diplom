@@ -7,7 +7,6 @@ import Data from "./components/Data";
 import Cart from "./common/Cart/Cart";
 import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
-import Users from "./pages/Users";
 import { Map } from "./pages/Map";
 import Contact from "./pages/Contact";
 import FaqPage from "./pages/FaqPage";
@@ -17,6 +16,8 @@ import { LoginPage } from "./common/Auth/LoginPage";
 import RegisterPage from "./common/Auth/RegisterPage";
 import AdminLogin from "./common/Auth/admin";
 import Payment from "./common/Payment/Payment"
+import { toast } from "react-toastify";
+import About from "./pages/About";
 
 function App() {
   const { productItems } = Data;
@@ -25,6 +26,7 @@ function App() {
   const [CartItem, setCartItem] = useState([]);
 
   const addToCart = (product) => {
+    toast("1 продукт добавлен в корзину!")
     const productExit = CartItem.find((item) => item.id === product.id);
     if (productExit) {
       setCartItem(
@@ -67,9 +69,6 @@ function App() {
               shopItems={shopItems}
             />
           </Route>
-          <Route path="/pages" exact>
-            <Page />
-          </Route>
           <Route path="/login">
             <LoginPage />
           </Route>
@@ -82,9 +81,6 @@ function App() {
               addToCart={addToCart}
               decreaseQty={decreaseQty}
             />
-          </Route>
-          <Route path="/user" exact>
-            <Users />
           </Route>
           <Route path="/track" exact>
             <Map />
@@ -103,6 +99,9 @@ function App() {
           </Route>
           <Route path="/payment" exact>
             <Payment/>
+          </Route>
+          <Route path="/about" exact>
+            <About/>
           </Route>
         </Switch>
         <Footer />

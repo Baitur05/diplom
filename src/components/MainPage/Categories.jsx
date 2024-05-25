@@ -14,44 +14,44 @@ import { Link } from "react-router-dom/cjs/react-router-dom";
 const Categories = () => {
   const data = [
     {
-      cateImg: <PhoneAndroidIcon style={{color:'#0f3460'}}/>,
+      cateImg: <PhoneAndroidIcon style={{ color: '#0f3460' }} />,
       cateName: "Телефоны",
       link: "/phone",
     },
     {
-      cateImg:  <CableIcon style={{color:'#0f3460'}}/>,
+      cateImg: <CableIcon style={{ color: '#0f3460' }} />,
       cateName: "Электроника",
       link: "/phone",
     },
     {
-      cateImg: <LaptopMacIcon style={{color:'#0f3460'}}/>,
+      cateImg: <LaptopMacIcon style={{ color: '#0f3460' }} />,
       cateName: "Ноутбуки",
       link: "/phone",
     },
     {
-      cateImg: <TabletAndroidIcon style={{color:'#0f3460'}}/>,
+      cateImg: <TabletAndroidIcon style={{ color: '#0f3460' }} />,
       cateName: "Планшеты",
       link: "/phone",
     },
     {
-      cateImg: <HeadphonesIcon style={{color:'#0f3460'}}/>,
+      cateImg: <HeadphonesIcon style={{ color: '#0f3460' }} />,
       cateName: "Наушники",
       link: "/phone",
     },
-  
+
     {
-      cateImg: <WatchIcon style={{color:'#0f3460'}}/>,
+      cateImg: <WatchIcon style={{ color: '#0f3460' }} />,
       cateName: "часы",
       link: "/phone",
     },
     {
-      cateImg: <VoicemailIcon style={{color:'#0f3460'}}/>,
+      cateImg: <VoicemailIcon style={{ color: '#0f3460' }} />,
       cateName: "Очки",
       link: "/phone",
     },
- 
-     {
-      cateImg: <SmartphoneIcon style={{color:'#0f3460'}}/>,
+
+    {
+      cateImg: <SmartphoneIcon style={{ color: '#0f3460' }} />,
       cateName: "Чехлы",
       link: "/phone",
     },
@@ -59,14 +59,17 @@ const Categories = () => {
 
   return (
     <>
-      <div className="category w-44">
+      <div style={{
+        padding: 10,
+        width: 'max-content',
+      }} className="category w-44 ml-20">
         {data.map((value, index) => {
           return (
-            <div className="box flex items-center " key={index}  style={{height:'50px', textAlign:'center'}}>
+            <div className="box flex items-center " key={index} style={{ height: '60px', textAlign: 'center' }}>
               {value.cateImg}
-              <Link  to={value.link }>
+              <Link to={value.link}>
                 <div>
-                <span style={{fontSize:'22px' }}>{value.cateName}</span>
+                  <span style={{ fontSize: '18px' }}>{value.cateName}</span>
                 </div>
               </Link>
             </div>

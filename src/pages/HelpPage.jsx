@@ -10,7 +10,8 @@ const HelpPage = () => {
       paddingRight: 10,
       paddingLeft: 10,
       paddingTop: 5,
-      display: 'flex'
+      display: 'flex',
+      marginBottom: 4
     }}>
       <Box sx={{ paddingRight: 2, display: 'flex', flexDirection: 'column', gap: 2 }}>
         <Typography sx={{ fontSize: '1.7rem', fontWeight: 600 }}>Присылайте нам сообщения для получения информации</Typography>
@@ -42,7 +43,7 @@ const HelpPage = () => {
             borderColor: 'lightblue',
             padding: 10,
           }}></textarea>
-          <ReactWhatsapp number="+996779079279" message={`Имя: ${name}
+          <ReactWhatsapp number="+996551570571" message={`Имя: ${name}
 Сообщение: ${message}`}>
             <Button type="submit" variant="contained">Отправить</Button>
           </ReactWhatsapp>
