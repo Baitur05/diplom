@@ -19,7 +19,7 @@ export const Map = () => {
 
   return (
     <div className="mb-96 pb-40">
-      <div className="absolute ml-20 w-[80%] text-xl">
+      <div className="absolute text-xl">
         <Categories />
       </div>
       <div

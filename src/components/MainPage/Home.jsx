@@ -8,7 +8,9 @@ const Home = () => {
     <>
       <section className='home'>
         <div className='container d_flex'>
-          <Categories />
+          <div className="ml-[-68px]">
+            <Categories />
+          </div>
           <SliderHome />
         </div>
       </section>

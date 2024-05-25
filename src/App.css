@@ -222,7 +222,7 @@ button {
 }
 .control-btn .prev:hover,
 .control-btn .next:hover {
-  background: #e94560;
+  background: #e94589;
   color: white;
   cursor: pointer;
 }
@@ -250,4 +250,14 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+
+/* -------active links-------- */
+nav ul a.active{
+  color: #e94560;
+}
+
+
+.region-list{
+  
 }

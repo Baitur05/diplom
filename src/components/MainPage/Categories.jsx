@@ -61,15 +61,15 @@ const Categories = () => {
     <>
       <div style={{
         padding: 10,
-        width: 'max-content'
-      }} className="category w-44">
+        width: 'max-content',
+      }} className="category w-44 ml-20">
         {data.map((value, index) => {
           return (
             <div className="box flex items-center " key={index} style={{ height: '60px', textAlign: 'center' }}>
               {value.cateImg}
               <Link to={value.link}>
                 <div>
-                  <span style={{ fontSize: '22px' }}>{value.cateName}</span>
+                  <span style={{ fontSize: '18px' }}>{value.cateName}</span>
                 </div>
               </Link>
             </div>

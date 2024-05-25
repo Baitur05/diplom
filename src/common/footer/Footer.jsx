@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,9 +8,8 @@ const Footer = () => {
       <footer >
         <div className="container grid2" >
           <div className="box">
-            <h1>Онлайн магазин</h1>
             <p>
-            Мы расширили наш ассортимент до ста миллионов товаров и предлагаем конкурентные цены.
+              Мы расширили наш ассортимент до ста миллионов товаров и предлагаем конкурентные цены.
             </p>
             <div className="icon d_flex">
               <div className="img d_flex">
@@ -29,7 +29,11 @@ const Footer = () => {
             <h2>Про нас</h2>
             <ul>
               <li>Карьера</li>
-              <li>Наш магазин</li>
+              <li>
+                <NavLink to="/about">
+                  Наш магазин
+                </NavLink>
+              </li>
               <li>Условия</li>
               <li>Наши заботы</li>
               <li>Конфиденциальность</li>
@@ -48,11 +52,14 @@ const Footer = () => {
           <div className="box">
             <h2>Наши контакты</h2>
             <ul>
-              <li>г Бишкек</li>
+              <li>г. Бишкек, ул. Токтоболота Абдумомунова, 220</li>
               <li>Email: alym01001@gmail.com</li>
-              <li>Phone: +996 551 570 570</li>
+              <li>Phone: +996 551 570 571</li>
             </ul>
           </div>
+        </div>
+        <div className="copyright">
+          <p>&copy; Copyright AlymPanel 2024</p>
         </div>
       </footer>
     </>
