@@ -18,6 +18,7 @@ import AdminLogin from "./common/Auth/admin";
 import Payment from "./common/Payment/Payment"
 import { toast } from "react-toastify";
 import About from "./pages/About";
+import SearchResult from "./pages/SearchResult";
 
 function App() {
   const { productItems } = Data;
@@ -102,6 +103,9 @@ function App() {
           </Route>
           <Route path="/about" exact>
             <About/>
+          </Route>
+          <Route path="/result" exact>
+            <SearchResult/>
           </Route>
         </Switch>
         <Footer />
