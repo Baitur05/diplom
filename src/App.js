@@ -11,14 +11,21 @@ import { Map } from "./pages/Map";
 import Contact from "./pages/Contact";
 import FaqPage from "./pages/FaqPage";
 import HelpPage from "./pages/HelpPage";
-import Phone from "./Mini-Pages/Phone/Phone";
 import { LoginPage } from "./common/Auth/LoginPage";
 import RegisterPage from "./common/Auth/RegisterPage";
 import AdminLogin from "./common/Auth/admin";
-import Payment from "./common/Payment/Payment"
+import Payment from "./common/Payment/Payment";
 import { toast } from "react-toastify";
 import About from "./pages/About";
 import SearchResult from "./pages/SearchResult";
+import MobilePhon1 from "./pages/MobilePhon1";
+import MobNout from "./pages/MobNout";
+import MobElektron from "./pages/MobElektron";
+import MobPlanshet from "./pages/MobPlanshet";
+import MobWatch from "./pages/MobWatch";
+import MobGlasses from "./pages/MobGlasses";
+import MobChehly from "./pages/MobChehly";
+import MobAirPods from "./pages/MobAirPods";
 
 function App() {
   const { productItems } = Data;
@@ -27,7 +34,7 @@ function App() {
   const [CartItem, setCartItem] = useState([]);
 
   const addToCart = (product) => {
-    toast("1 продукт добавлен в корзину!")
+    toast("1 продукт добавлен в корзину!");
     const productExit = CartItem.find((item) => item.id === product.id);
     if (productExit) {
       setCartItem(
@@ -99,13 +106,37 @@ function App() {
             <AdminLogin />
           </Route>
           <Route path="/payment" exact>
-            <Payment/>
+            <Payment />
           </Route>
           <Route path="/about" exact>
-            <About/>
+            <About />
+          </Route>
+          <Route path="/MobilPhone1" exact>
+            <MobilePhon1 />
+          </Route>
+          <Route path="/MobNout" exact>
+            <MobNout />
+          </Route>
+          <Route path="/MobElektron" exact>
+            <MobElektron />
+          </Route>
+          <Route path="/MobPlanshet" exact>
+            <MobPlanshet />
+          </Route>
+          <Route path="/MobChehly" exact>
+            <MobChehly />
+          </Route>
+          <Route path="/MobGlasses" exact>
+            <MobGlasses />
+          </Route>пше фвв ю
+          <Route path="/MobWatch" exact>
+            <MobWatch />
+          </Route>
+          <Route path="/MobAirPods" exact>
+            <MobAirPods />
           </Route>
           <Route path="/result" exact>
-            <SearchResult/>
+            <SearchResult />
           </Route>
         </Switch>
         <Footer />

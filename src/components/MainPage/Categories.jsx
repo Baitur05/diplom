@@ -16,44 +16,44 @@ const Categories = () => {
     {
       cateImg: <PhoneAndroidIcon style={{ color: '#0f3460' }} />,
       cateName: "Телефоны",
-      link: "/phone",
+      link: "/MobilPhone1"
     },
     {
       cateImg: <CableIcon style={{ color: '#0f3460' }} />,
       cateName: "Электроника",
-      link: "/phone",
+      link: "/MobElektron"
     },
     {
       cateImg: <LaptopMacIcon style={{ color: '#0f3460' }} />,
       cateName: "Ноутбуки",
-      link: "/phone",
+      link: "/MobNout"
     },
     {
       cateImg: <TabletAndroidIcon style={{ color: '#0f3460' }} />,
       cateName: "Планшеты",
-      link: "/phone",
+      link: "/MobPlanshet"
     },
     {
       cateImg: <HeadphonesIcon style={{ color: '#0f3460' }} />,
       cateName: "Наушники",
-      link: "/phone",
+      link: "/MobAirPods"
     },
 
     {
       cateImg: <WatchIcon style={{ color: '#0f3460' }} />,
       cateName: "часы",
-      link: "/phone",
+      link: "/MobWatch"
     },
     {
       cateImg: <VoicemailIcon style={{ color: '#0f3460' }} />,
       cateName: "Очки",
-      link: "/phone",
+      link: "/MobGlasses"
     },
 
     {
       cateImg: <SmartphoneIcon style={{ color: '#0f3460' }} />,
       cateName: "Чехлы",
-      link: "/phone",
+      link: "/MobChehly"
     },
   ];
 
